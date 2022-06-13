@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Fylo data storage component | ahjim.com</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="info_container">
+          <img
+            src="./images/logo.svg"
+            alt="fylo logo"
+            class="info_container__logo"
+          />
+          <div class="info_container__option_container">
+            <div class="info_container__options">
+              <img
+                src="./images/icon-document.svg"
+                alt="document icon"
+                class="info_container__options_img"
+              />
+            </div>
+            <div class="info_container__options">
+              <img
+                src="./images/icon-folder.svg"
+                alt="folder icon"
+                class="info_container__options_img"
+              />
+            </div>
+            <div class="info_container__options">
+              <img
+                src="./images/icon-upload.svg"
+                alt="upload icon"
+                class="info_container__options_img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="visualization_container">
+          <h1>
+            You’ve used <strong><span id="used">815</span> GB</strong> of your
+            storage
+          </h1>
+          <div class="visualization_container__progress">
+            <div class="visualization_container__progress_bar">
+              <div class="visualization_container__progress_bar__circle"></div>
+            </div>
+          </div>
+          <div class="visualization_container__range">
+            <h2>0 gb</h2>
+            <h2><span id="total">1000</span> gb</h2>
+          </div>
+          <div class="visualization_container_leftSpace">
+            <p class="visualization_container_leftSpace__text">
+              <span id="left">185</span> GB Left
+            </p>
+            <img src="./images/polygon.svg" alt="polygon" class="poligon" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --dark: #0c122c;
+  --light: #fdfdfd;
+  --light-2: #fffffd;
+  --gray: #87888d;
+  --blue: #1e2c69;
+  --red: #45093d;
+  --gradient: linear-gradient(90deg, #efa49f 0%, #f94a8d 99.42%);
+}
+
+body {
+  background-color: var(--dark);
+}
+@media (max-width: 548px) {
+  body {
+    background-color: #0f1b3d;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(1440px, 100%);
+  padding: 26px;
+  height: min(800px, 100vh);
+  margin: 0 auto;
+  background-image: url(./images/bg-desktop.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 548px) {
+  main {
+    background-image: url(./images/bg-mobile.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+@media (max-width: 548px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+  }
+}
+
+.info_container {
+  width: min(350px, 100%);
+  padding: 40px 41px;
+  background: var(--blue);
+  border-radius: 10px 100px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+@media (max-width: 548px) {
+  .info_container {
+    width: 100%;
+  }
+}
+
+.info_container__logo {
+  width: min(135px, 100%);
+  height: auto;
+}
+
+.info_container__option_container {
+  display: flex;
+  gap: 16px;
+}
+
+.info_container__options {
+  display: flex;
+  background-color: var(--dark);
+  border-radius: 10px;
+  height: 48px;
+  width: 48px;
+}
+
+.info_container__options img {
+  width: 24px;
+  height: auto;
+  margin: auto;
+}
+
+.info_container__options:first-child img {
+  width: 20px;
+}
+
+.visualization_container {
+  width: min(540px, 100%);
+  min-height: 154px;
+  padding: 40px 41px;
+  background: var(--blue);
+  border-radius: 10px;
+  position: relative;
+}
+
+.visualization_container h1 {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #dddbff;
+  font-weight: 400;
+}
+@media (max-width: 548px) {
+  .visualization_container h1 {
+    text-align: center;
+  }
+}
+
+.visualization_container__progress {
+  margin-top: 15px;
+  width: 100%;
+  height: 20px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.visualization_container__progress_bar {
+  width: 75%;
+  height: 100%;
+  background: var(--gradient);
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3px;
+}
+
+.visualization_container__progress_bar__circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light);
+}
+
+.visualization_container__range {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+  justify-content: space-between;
+}
+
+.visualization_container__range h2 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.visualization_container_leftSpace {
+  position: absolute;
+  top: -30%;
+  right: 40px;
+  left: auto;
+  background-color: var(--light-2);
+  padding: 12px 24px 14px;
+  border-radius: 10px 10px 0px 10px;
+}
+@media (max-width: 548px) {
+  .visualization_container_leftSpace {
+    top: 80%;
+    right: 50%;
+    transform: translateX(50%);
+    left: auto;
+    border-radius: 10px;
+  }
+}
+
+.visualization_container_leftSpace__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.visualization_container_leftSpace__text span {
+  font-size: 39px;
+  line-height: 46px;
+  color: var(--dark);
+}
+
+.visualization_container_leftSpace .poligon {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+}
+@media (max-width: 548px) {
+  .visualization_container_leftSpace .poligon {
+    display: none;
+  }
+}

@@ -75,6 +75,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 33px;
+  filter: drop-shadow(2px 2px 40px rgba(0, 0, 0, 0.9));
 }
 @media (max-width: 548px) {
   .info_container {
@@ -117,6 +118,7 @@ main {
   background: var(--blue);
   border-radius: 10px;
   position: relative;
+  filter: drop-shadow(2px 2px 40px rgba(0, 0, 0, 0.9));
 }
 
 .visualization_container h1 {
